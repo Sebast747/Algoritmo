@@ -1,0 +1,34 @@
+def calcular_nomina():
+    # Solicita el pago por día
+    pago_por_dia = float(input("Introduce el pago por día: "))
+   
+      # Solicita los días trabajados
+    dias_trabajados = int(input("Introduce los días trabajados: "))
+   
+    # Solicita las horas extra trabajadas
+    horas_extra = int(input("Introduce las horas extra trabajadas: "))
+   
+    # Solicita las faltas
+    faltas = int(input("Introduce el número de faltas: "))
+   
+    # se calcula el sueldo base
+    sueldo_base = dias_trabajados * pago_por_dia
+    
+    # se calcula el pago por horas extra ( se pagan al doble)
+    pago_horas_extra = horas_extra * (pago_por_dia / 8) * 2
+    
+    # Calcula el descuento por faltas
+    descuento_faltas = faltas * pago_por_dia
+    
+    # Calcula el sueldo mensual
+    sueldo_mensual = sueldo_base + pago_horas_extra - descuento_faltas
+    
+    # Imprime los resultados detallados
+    print("\nDetalle de la nómina:")
+    print(f"Sueldo base: {sueldo_base}")
+    print(f"Pago por horas extra: {pago_horas_extra}")
+    print(f"Descuento por faltas: {descuento_faltas}")
+    print(f"Sueldo mensual: {sueldo_mensual}")
+
+# Llama a la función para ejecutar el cálculo de nómina
+calcular_nomina()
