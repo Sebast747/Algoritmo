@@ -1,0 +1,14 @@
+#Calculate the selling price of a hamburger
+ # Ingredient costs
+ pan = 7  # Bimbo brand bread = $7
+ carne = 23  # Approximately 120 grams of Member's Mark beef = $23
+ queso = 8.75 # 1 slice of Kraft American Cheese Singles = 8.75
+ jitomate = 3  # 2 slices of tomato = $3
+ lechuga = 16  # 2 lettuce leaves = $16
+ cebolla = 3  # 2 slices of onion = $3
+ catsup = 0.66  # 20 grams of Clemente Jacques ketchup = $0.66
+ mayonesa = 1.25  # 15 grams of McCormick mayonnaise = $1.25
+ mostaza = 0.80  # 5 grams of McCormick mustard = $0.80
+ 
+ # Fixed costs
+ empaque = 5  
