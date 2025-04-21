@@ -1,0 +1,13 @@
+#Calculadora de nomina
+ # Primero es solicitar los datos al usuario
+ pago_dia = float(input("Pago por día: "))
+ dias = int(input("Días trabajados: "))
+ horas_extra = int(input("Horas extra: "))
+ faltas = int(input("Faltas: "))
+ # Para calcular sueldo mensual:
+ # Se multiplica el pago diario por los días trabajados
+ # Se calcula el pago de horas extra: (salario por hora) * 2 (doble pago por hora extra)
+ # Se resta el descuento por faltas (un día de salario por cada falta)
+ sueldo = (dias * pago_dia) + (horas_extra * (pago_dia / 8) * 2) - (faltas * pago_dia)
+ # Resultado
+ print(f"Sueldo mensual: {sueldo}")
